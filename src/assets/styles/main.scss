@@ -4,7 +4,7 @@ $primary-red: #F4989C;
 $primary-dark: #30343F;
 $primary-white: #FFF0EF;
 
-@@mixin flex() {
+@mixin flex() {
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
