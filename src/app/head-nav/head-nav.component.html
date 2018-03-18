@@ -1,2 +1,8 @@
-<a [routerLink]="['/']">STREAM</a>
-<a [routerLink]="['/tournament']">TOURNAMENT</a>
+<div class="section">
+  <a [routerLink]="['/']">STREAM</a>
+  <div class="underline-select selected"></div>
+</div>
+<div class="section">
+  <a [routerLink]="['/tournament']">TOURNAMENT</a>
+  <div class="underline-select" [class.selected]="selected === 'tournament'"></div>
+</div>

@@ -17,7 +17,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log($('body'));
   }
 
 }
