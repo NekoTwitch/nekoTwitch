@@ -10,7 +10,8 @@ html, body, p, h1, h2, h3, h4, h5 {
 html, body {
   width: 100%;
   height: 100%;
-  background-color: $primary-dark
+  overflow: hidden;
+  font-family: Cagliostro;
 }
 
 a {

@@ -4,6 +4,7 @@
   @include flex();
   justify-content: center;
   height: 48px;
+  min-height: 48px;
   border-bottom: 1px solid $primary-white;
 
   a {

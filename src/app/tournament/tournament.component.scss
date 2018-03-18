@@ -1,0 +1,7 @@
+@import "../../assets/styles/main";
+
+:host {
+  width: 100%;
+  @include flex();
+  flex-direction: column;
+}
