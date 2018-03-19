@@ -22,7 +22,9 @@
     }
 
     .underline-select {
-      width: calc(100% - 32px);
+      &.selected {
+        width: calc(100% - 32px);
+      }
     }
   }
 }

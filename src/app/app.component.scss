@@ -2,6 +2,6 @@
 
 :host {
   @include flex();
-  height: 100%;
-  background-color: $primary-dark;
+  flex-direction: column;
+  width: 100%;
 }

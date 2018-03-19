@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-head-nav',
@@ -11,7 +11,5 @@ export class HeadNavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.selected);
   }
-
 }

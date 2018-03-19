@@ -1,8 +1,9 @@
-<div class="section">
+<div class="section" (click)="selected = 'home'">
   <a [routerLink]="['/']">STREAM</a>
-  <div class="underline-select selected"></div>
+  <div class="underline-select" [class.selected]="selected === 'home'"></div>
 </div>
-<div class="section">
+<div class="section" (click)="selected = 'tournament'">
   <a [routerLink]="['/tournament']">TOURNAMENT</a>
   <div class="underline-select" [class.selected]="selected === 'tournament'"></div>
 </div>
+
