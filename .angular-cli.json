@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "assets/fonts/Cagliostro/Cagliostro.scss"
+        "assets/fonts/Cagliostro/Cagliostro.css"
       ],
       "scripts": ["../node_modules/jquery/dist/jquery.min.js"],
       "environmentSource": "environments/environment.ts",
