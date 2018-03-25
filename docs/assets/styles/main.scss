@@ -1,0 +1,25 @@
+$primary-purple: #6158A5;
+$second-purple: #4F517D;
+$primary-red: #F4989C;
+$primary-dark: #30343F;
+$primary-white: #FFF0EF;
+
+@mixin flex() {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+}
+
+.underline-select {
+  background-color: $primary-red;
+  height: 4px;
+  width: 0;
+  opacity: 0;
+  border-radius: 4px;
+  transition: width 0.5s, opacity 0.5s;
+
+  &.selected {
+    width: 100%;
+    opacity: 1;
+  }
+}
