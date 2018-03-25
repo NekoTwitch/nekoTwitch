@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './pages/app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { TournamentComponent } from './tournament/tournament.component';
-import { HeadNavComponent } from './head-nav/head-nav.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { TournamentComponent } from './pages/tournament/tournament.component';
+import { HeadNavComponent } from './pages/head-nav/head-nav.component';
 import { ScriptHackComponent } from './widgets/script-hack/script-hack.component';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { ScriptHackComponent } from './widgets/script-hack/script-hack.component
     HomePageComponent,
     TournamentComponent,
     HeadNavComponent,
-    ScriptHackComponent
+    ScriptHackComponent,
   ],
   imports: [
     AppRoutingModule,
