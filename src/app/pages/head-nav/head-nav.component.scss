@@ -7,13 +7,13 @@
   min-height: 48px;
   border-bottom: 1px solid $primary-white;
 
-  .section {
+  a {
     @include flex();
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    a {
+    .section {
       color: $primary-white;
       @include flex();
       flex-direction: column;
