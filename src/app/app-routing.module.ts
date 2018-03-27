@@ -10,10 +10,6 @@ const routes: Routes = [
     component: HomePageComponent
   },
   {
-    path: 'stream',
-    component: HomePageComponent,
-  },
-  {
     path: 'tournament',
     component: TournamentComponent,
   },
