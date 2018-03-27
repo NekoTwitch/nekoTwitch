@@ -1,5 +1,5 @@
 $primary-purple: #6158A5;
-$second-purple: #4F517D;
+$secondary-purple: #4F517D;
 $primary-red: #F4989C;
 $primary-dark: #30343F;
 $primary-white: #FFF0EF;
@@ -16,7 +16,7 @@ $primary-white: #FFF0EF;
   width: 0;
   opacity: 0;
   border-radius: 4px;
-  transition: width 0.5s, opacity 0.5s;
+  transition: width 0.25s, opacity 0.25s;
 
   &.selected {
     width: 100%;

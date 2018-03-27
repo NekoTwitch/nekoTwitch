@@ -6,8 +6,8 @@ import {TournamentComponent} from './pages/tournament/tournament.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'stream',
-    pathMatch: 'full'
+    pathMatch: 'full',
+    component: HomePageComponent
   },
   {
     path: 'stream',
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'stream'
+    redirectTo: '',
   }
 ];
 
