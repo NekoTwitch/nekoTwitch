@@ -1,6 +1,26 @@
-<div class="stream-container">
-  <div id="twitch-embed"></div>
+<div class='twitchWrapper'>
+  <div class='twitchStream'>
+    <iframe
+      class="video"
+      src="http://player.twitch.tv/?channel=imfluffyneko"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen="true"
+      autoplay="true">
+    </iframe>
+
+  </div>
+  <!--<div class='twitchChat'>-->
+  <!--<iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/**YOUR-CHANNEL-NAME**/chat"></iframe>-->
+  <!--</div>-->
 </div>
 
-<app-script-hack *ngIf="animDone" src='https://embed.twitch.tv/embed/v1.js'></app-script-hack>
-<app-script-hack *ngIf="animDone" src="assets/scripts/twitch-embed.js" type='text/javascript'></app-script-hack>
+<!-- IF CHAT NEED -->
+
+
+<!--<div class="stream-container">-->
+<!--<div id="twitch-embed"></div>-->
+<!--</div>-->
+
+<!--<app-script-hack *ngIf="animDone" src='https://embed.twitch.tv/embed/v1.js'></app-script-hack>-->
+<!--<app-script-hack *ngIf="animDone" src="assets/scripts/twitch-embed.js" type='text/javascript'></app-script-hack>-->
