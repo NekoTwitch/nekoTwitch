@@ -1,10 +1,10 @@
-.twitchWrapper {
-  position: relative;
-}
+//.twitchWrapper {
+//  position: relative;
+//}
 
 .twitchStream {
   position: relative;
-  width: 75%;
+  //width: 75%;
 }
 
 .twitchStream:before {
@@ -29,11 +29,11 @@
   height: 100%;
 }
 
-@media (max-width: 1024px) {
-  .twitchStream {
-    width: 100%;
-  }
-  .twitchChat {
-    display: none;
-  }
-}
+//@media (max-width: 1024px) {
+//  .twitchStream {
+//    width: 100%;
+//  }
+//  .twitchChat {
+//    display: none;
+//  }
+//}

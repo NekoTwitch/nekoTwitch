@@ -1,21 +1,21 @@
 @import "../../../assets/styles/main";
 
 :host {
-  @include flex();
+  @include display-flex();
   justify-content: center;
   height: 48px;
   min-height: 48px;
   border-bottom: 1px solid $primary-white;
 
   a {
-    @include flex();
+    @include display-flex();
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .section {
       color: $primary-white;
-      @include flex();
+      @include display-flex();
       flex-direction: column;
       justify-content: center;
       padding: 0 16px;

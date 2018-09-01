@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/main";
-@import "assets/styles/responsive-embed";
 
 html, body, p, h1, h2, h3, h4, h5 {
   padding: 0;
@@ -13,6 +12,7 @@ html, body {
   overflow: hidden;
   font-family: Cagliostro, sans-serif;
   background-color: $primary-dark;
+  color: $primary-white;
 }
 
 a {

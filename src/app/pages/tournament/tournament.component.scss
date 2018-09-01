@@ -2,6 +2,6 @@
 
 :host {
   width: 100%;
-  @include flex();
+  @include display-flex();
   flex-direction: column;
 }

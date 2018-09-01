@@ -4,12 +4,6 @@ $primary-red: #F4989C;
 $primary-dark: #30343F;
 $primary-white: #FFF0EF;
 
-@mixin flex() {
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-}
-
 .underline-select {
   background-color: $primary-red;
   height: 4px;
@@ -22,4 +16,42 @@ $primary-white: #FFF0EF;
     width: 100%;
     opacity: 1;
   }
+}
+
+@mixin display-flex() {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+}
+
+@mixin flex($option) {
+  flex: $option;
+  -ms-flex: $option;
+  -webkit-flex: $option;
+}
+
+@mixin flex-direction($option) {
+  flex-direction: $option;
+  -ms-flex-direction: $option;
+  -webkit-flex-direction: $option;
+}
+
+@mixin justify-content($option) {
+  justify-content: $option;
+  -webkit-justify-content: $option;
+}
+
+@mixin align-items($option) {
+  align-items: $option;
+  -webkit-align-items: $option;
+}
+
+@mixin align-content($option) {
+  align-content: $option;
+  -webkit-align-content: $option;
+}
+
+@mixin align-self($option) {
+  align-self: $option;
+  -webkit-align-self: $option;
 }

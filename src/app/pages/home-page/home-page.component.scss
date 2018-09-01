@@ -1,34 +1,40 @@
 @import "../../../assets/styles/main";
+@import "../../../assets/styles/responsive-embed";
 
 :host {
   height: 100%;
-  @include flex();
+  @include display-flex();
+  overflow: auto;
 
-  .video {
-    width: 1200px;
-    height: 500px;
+  .twitch-container {
+    @include display-flex();
+    height: 100%;
+    width: 100%;
+
+    .twitchStream {
+      @include flex(1);
+    }
+
+    .description {
+      @include display-flex();
+      @include justify-content(center);
+      width: 450px;
+    }
   }
-
-  //.stream-container {
-  //  width: 60%;
-  //  margin-left: 8px;
-  //  height: calc(100% - 16px);
-  //  @include flex();
-  //  align-items: center;
-  //  justify-content: center;
-  //
-  //  #twitch-embed {
-  //    box-sizing: border-box;
-  //    width: 100%;
-  //    height: 100%;
-  //  }
-  //}
 }
 
-//@media all and (max-width: 900px) {
-//.stream-container {
-//  width: 100%;
-//  height: 100%;
-//  margin: 0;
-//}
-//}
+@media all and (max-width: 1024px) {
+  :host {
+    .twitch-container {
+      @include flex-direction(column);
+
+      .twitchStream {
+        @include flex(none);
+      }
+
+      .description {
+        width: 100%;
+      }
+    }
+  }
+}
