@@ -5,26 +5,27 @@
   height: 100%;
   @include display-flex();
   overflow: auto;
+  margin: 16px;
 
   .twitch-container {
-    @include display-flex();
     height: 100%;
     width: 100%;
 
     .twitchStream {
-      @include flex(1);
     }
+  }
 
-    .description {
-      @include display-flex();
-      @include justify-content(center);
-      width: 450px;
-    }
+  .description {
+    @include display-flex();
+    @include justify-content(center);
+    width: 450px;
   }
 }
 
 @media all and (max-width: 1024px) {
   :host {
+    margin: 8px;
+
     .twitch-container {
       @include flex-direction(column);
 
