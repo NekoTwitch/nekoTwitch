@@ -10,32 +10,30 @@
   .twitch-container {
     height: 100%;
     width: 100%;
-
-    .twitchStream {
-    }
   }
 
   .description {
     @include display-flex();
     @include justify-content(center);
-    width: 450px;
+    width: 350px;
+    min-width: 350px;
+    padding: 8px 0 0 16px;
+    box-sizing: border-box;
   }
 }
 
 @media all and (max-width: 1024px) {
   :host {
+    @include flex-direction(column);
     margin: 8px;
 
     .twitch-container {
-      @include flex-direction(column);
+      height: fit-content;
+    }
 
-      .twitchStream {
-        @include flex(none);
-      }
-
-      .description {
-        width: 100%;
-      }
+    .description {
+      margin-top: 8px;
+      width: 100%;
     }
   }
 }
