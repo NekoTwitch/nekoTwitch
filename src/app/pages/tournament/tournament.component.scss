@@ -1,7 +1,36 @@
 @import "../../../assets/styles/main";
 
 :host {
-  width: 100%;
   @include display-flex();
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 16px 16px 8px 16px;
+  box-sizing: border-box;
+
+  .tree-container {
+    width: 100%;
+    height: 100%;
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  :host {
+    @include flex-direction(column);
+    padding: 8px;
+
+    .twitch-container {
+      height: fit-content;
+    }
+
+    .description {
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
 }

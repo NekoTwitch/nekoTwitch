@@ -5,7 +5,7 @@
   height: 100%;
   @include display-flex();
   overflow: auto;
-  margin: 16px;
+  margin: 16px 16px 8px 16px;
 
   .twitch-container {
     height: 100%;
