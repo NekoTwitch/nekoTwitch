@@ -2,10 +2,10 @@
 @import "../../../assets/styles/responsive-embed";
 
 :host {
-  height: 100%;
   @include display-flex();
+  height: 100%;
   overflow: auto;
-  margin: 16px 16px 8px 16px;
+  padding: 16px 16px 8px 16px;
 
   .twitch-container {
     height: 100%;
@@ -19,6 +19,15 @@
     min-width: 350px;
     padding: 8px 0 0 16px;
     box-sizing: border-box;
+
+    a {
+      @include display-flex;
+      @include justify-content(center);
+      img {
+        max-width: 100%;
+        width: 200px;
+      }
+    }
   }
 }
 
