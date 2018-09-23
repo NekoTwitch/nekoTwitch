@@ -6,17 +6,17 @@
   height: 100%;
   overflow: auto;
   padding: 16px 16px 8px 16px;
+  box-sizing: content-box;
 
   .twitch-container {
-    height: 100%;
-    width: 100%;
+    @include flex(1);
   }
 
   .description {
     @include display-flex();
     @include justify-content(center);
     width: 350px;
-    min-width: 350px;
+    max-width: 100%;
     padding: 8px 0 0 16px;
     box-sizing: border-box;
 
@@ -41,7 +41,7 @@
     }
 
     .description {
-      margin-top: 8px;
+      padding: 8px 0 0 0;
       width: 100%;
     }
   }
