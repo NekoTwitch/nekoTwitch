@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -6,16 +6,12 @@ import {AfterViewInit, Component} from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 
-export class HomePageComponent implements AfterViewInit {
-  animDone: boolean = false;
+export class HomePageComponent implements OnInit {
 
   constructor() {
   }
 
-  ngAfterViewInit() {
-    setTimeout(() => {
-      this.animDone = true;
-    }, 250);
+  ngOnInit() {
   }
 }
 

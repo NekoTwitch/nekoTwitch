@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-head-nav',
@@ -6,10 +6,12 @@ import {Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./head-nav.component.scss']
 })
 export class HeadNavComponent implements OnInit {
-@Input() selected: any = 'home';
+  public selected: string = 'home';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+
   }
 }

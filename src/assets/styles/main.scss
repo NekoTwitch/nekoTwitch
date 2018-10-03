@@ -1,8 +1,4 @@
-$primary-purple: #6158A5;
-$secondary-purple: #4F517D;
-$primary-red: #F4989C;
-$primary-dark: #30343F;
-$primary-white: #FFF0EF;
+@import 'colors';
 
 .underline-select {
   background-color: $primary-red;
@@ -18,40 +14,3 @@ $primary-white: #FFF0EF;
   }
 }
 
-@mixin display-flex() {
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-}
-
-@mixin flex($option) {
-  flex: $option;
-  -ms-flex: $option;
-  -webkit-flex: $option;
-}
-
-@mixin flex-direction($option) {
-  flex-direction: $option;
-  -ms-flex-direction: $option;
-  -webkit-flex-direction: $option;
-}
-
-@mixin justify-content($option) {
-  justify-content: $option;
-  -webkit-justify-content: $option;
-}
-
-@mixin align-items($option) {
-  align-items: $option;
-  -webkit-align-items: $option;
-}
-
-@mixin align-content($option) {
-  align-content: $option;
-  -webkit-align-content: $option;
-}
-
-@mixin align-self($option) {
-  align-self: $option;
-  -webkit-align-self: $option;
-}
