@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {BehaviorSubjectsService} from '../../widgets/behavior-subjects/behavior-subjects.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,9 +9,10 @@ import {Component, OnInit} from '@angular/core';
 
 export class HomePageComponent implements OnInit {
 
-  constructor() {
+  constructor(private _BehaviorSubjectsService: BehaviorSubjectsService) {
   }
 
   ngOnInit() {
+    this._BehaviorSubjectsService.updateMenuSelection('home');
   }
 }
