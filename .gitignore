@@ -2,7 +2,7 @@
 
 # firebase
 .firebaserc
-.firebase.json
+firebase\.json
 .firebase/
 
 # compiled output
@@ -47,3 +47,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
