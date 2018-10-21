@@ -2,7 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 import {AppComponent} from './app.component';
 import {HomePageComponent} from './pages/home-page/home-page.component';
@@ -24,7 +23,6 @@ import {BehaviorSubjectsService} from './widgets/behavior-subjects/behavior-subj
     BrowserModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy},
     BehaviorSubjectsService
   ],
   bootstrap: [AppComponent]
