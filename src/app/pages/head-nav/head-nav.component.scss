@@ -14,11 +14,13 @@
     @include align-items(center);
     @include flex-direction(column);
     @include justify-content(center);
+    box-sizing: border-box;
     text-transform: uppercase;
     padding: 0 16px;
 
     p {
       color: $primary-white;
+      @include transition(color, 0.25s);
     }
 
     .underline-select {
@@ -26,12 +28,17 @@
         width: 100%;
       }
     }
+
+    &:hover p {
+      color: $primary-red;
+    }
   }
 
   .select-lang {
     @include display-flex();
     @include align-items(center);
     @include transition(background-color, 0.25s);
+    @include transition(color, 0.25s);
     border-radius: 4px;
     position: absolute;
     right: 8px;
@@ -43,16 +50,28 @@
     }
 
     img {
+      @include transition(opacity, 0.25s);
+      opacity: 0.5;
       width: 40px;
       height: 40px;
       cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.selected {
+        opacity: 1;
+        cursor: default;
+      }
 
       &:not(:nth-child(2)) {
         margin-right: 8px;
       }
     }
 
-    &:hover {
+    &:hover:not(.no-hover) {
+      color: $primary-red;
       background-color: $tertiary-dark;
     }
   }

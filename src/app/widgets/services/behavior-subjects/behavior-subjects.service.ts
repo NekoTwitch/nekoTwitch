@@ -15,6 +15,7 @@ export class BehaviorSubjectsService {
   }
 
   updateLanguage(newValue) {
+    this.language.next(newValue);
     this._translate.use(newValue);
     localStorage.setItem('lang', newValue);
   }

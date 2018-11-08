@@ -10,7 +10,7 @@ export class HeadNavComponent implements OnInit, OnDestroy {
   public selected: string = null;
   public showTranslate: boolean = false;
 
-  constructor(private _Behavior: BehaviorSubjectsService) {
+  constructor(public _Behavior: BehaviorSubjectsService) {
   }
 
   ngOnInit() {
