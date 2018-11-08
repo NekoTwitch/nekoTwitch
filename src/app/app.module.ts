@@ -43,9 +43,6 @@ import {SharedModule} from './shared-module';
       }
     })
   ],
-  exports: [
-    SharedModule
-  ],
   providers: [
     BehaviorSubjectsService,
   ],

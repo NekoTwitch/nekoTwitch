@@ -35,3 +35,10 @@
   align-self: $option;
   -webkit-align-self: $option;
 }
+
+@mixin transition($option, $time) {
+  transition: $option $time;
+  -o-transition: $option $time;
+  -moz-transition: $option $time;
+  -webkit-transition: $option $time;
+}

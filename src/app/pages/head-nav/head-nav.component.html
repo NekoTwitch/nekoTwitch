@@ -1,10 +1,10 @@
-<a [routerLink]="['/']" (click)="selected = 'home'">
-  <div translate class="section">head-nav.stream</div>
+<a class="section" [routerLink]="['/']" (click)="selected = 'home'">
+  <p translate>head-nav.stream</p>
   <div class="underline-select" [class.selected]="selected === 'home'"></div>
 </a>
 
-<a [routerLink]="['/tournament']" (click)="selected = 'tournament'">
-  <div translate class="section">head-nav.tournament</div>
+<a class="section" [routerLink]="['/tournament']" (click)="selected = 'tournament'">
+  <p translate>head-nav.tournament</p>
   <div class="underline-select" [class.selected]="selected === 'tournament'"></div>
 </a>
 

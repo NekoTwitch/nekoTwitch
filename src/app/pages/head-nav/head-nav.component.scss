@@ -9,7 +9,7 @@
   background-color: $secondary-dark;
   border-bottom: 2px solid $tertiary-dark;
 
-  a {
+  .section {
     @include display-flex();
     @include align-items(center);
     @include flex-direction(column);
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     padding: 0 16px;
 
-    .section {
+    p {
       color: $primary-white;
     }
 
@@ -31,11 +31,14 @@
   .select-lang {
     @include display-flex();
     @include align-items(center);
+    @include transition(background-color, 0.25s);
+    border-radius: 4px;
     position: absolute;
     right: 8px;
     top: 3px;
 
     a {
+      text-transform: uppercase;
       padding: 8px;
     }
 
@@ -47,6 +50,10 @@
       &:not(:nth-child(2)) {
         margin-right: 8px;
       }
+    }
+
+    &:hover {
+      background-color: $tertiary-dark;
     }
   }
 }
