@@ -15,7 +15,7 @@
   .description {
     height: 100%;
     @include display-flex();
-    @include justify-content(center);
+    @include flex-direction(column);
     width: 350px;
     max-width: 100%;
     padding: 8px 0 0 16px;

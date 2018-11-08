@@ -1,5 +1,5 @@
+import {BehaviorSubjectsService} from '../../widgets/services/behavior-subjects/behavior-subjects.service';
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {BehaviorSubjectsService} from '../../widgets/behavior-subjects/behavior-subjects.service';
 
 @Component({
   selector: 'app-head-nav',
@@ -8,17 +8,22 @@ import {BehaviorSubjectsService} from '../../widgets/behavior-subjects/behavior-
 })
 export class HeadNavComponent implements OnInit, OnDestroy {
   public selected: string = null;
+  public showTranslate: boolean = false;
 
-  constructor(private _BehaviorSubjectsService: BehaviorSubjectsService) {
+  constructor(private _Behavior: BehaviorSubjectsService) {
   }
 
   ngOnInit() {
-    this._BehaviorSubjectsService.menuSelected.subscribe(
+    this._Behavior.menuSelected.subscribe(
       value => this.selected = value
     );
   }
 
   ngOnDestroy() {
-    this._BehaviorSubjectsService.menuSelected.unsubscribe();
+    this._Behavior.menuSelected.unsubscribe();
+  }
+
+  selectLang(arg: string) {
+    this._Behavior.updateLanguage(arg);
   }
 }

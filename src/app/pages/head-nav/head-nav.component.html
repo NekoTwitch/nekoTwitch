@@ -1,9 +1,15 @@
 <a [routerLink]="['/']" (click)="selected = 'home'">
-  <div class="section">STREAM</div>
+  <div translate class="section">head-nav.stream</div>
   <div class="underline-select" [class.selected]="selected === 'home'"></div>
 </a>
 
 <a [routerLink]="['/tournament']" (click)="selected = 'tournament'">
-  <div class="section">TOURNAMENT</div>
+  <div translate class="section">head-nav.tournament</div>
   <div class="underline-select" [class.selected]="selected === 'tournament'"></div>
 </a>
+
+<div class="select-lang">
+  <a translate *ngIf="!showTranslate" (click)="showTranslate = true">head-nav.language</a>
+  <img *ngIf="showTranslate" (click)="selectLang('en')" src="/src/assets/img/en-flag.png" alt="change to english"/>
+  <img *ngIf="showTranslate" (click)="selectLang('fr')" src="/src/assets/img/fr-flag.png" alt="changer en français"/>
+</div>

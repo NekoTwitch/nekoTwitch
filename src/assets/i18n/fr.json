@@ -1,0 +1,13 @@
+{
+  "head-nav": {
+    "language": "fr",
+    "stream": "Stream",
+    "tournament": "Tournoi"
+  },
+  "stream": {
+    "info-part-1": "Bienvenue sur mon stream !",
+    "info-part-2": "Étant développeur je me suis lancé le défi/projet de créer une interface permettant d'organiser mes tournois.",
+    "info-part-3": "Cette application web est toujours en développement, n'hésite pas à me dire ce que tu en penses.",
+    "info-part-4": "D'ailleurs pour discuter tu peux me rejoindre sur discord, c'est gratuit, c'est simple, c'est beau, c'est super. ^w^"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "head-nav": {
+    "language": "EN",
+    "stream": "Stream",
+    "tournament": "Tournament"
+  },
+  "stream": {
+    "info-part-1": "Welcome to my stream !",
+    "info-part-2": "As a developer, i started that project to create an interface to manage my tournaments.",
+    "info-part-3": "That application is still under development, please give me feedback about it.",
+    "info-part-4": "Also you can join our discord, that's free, pretty simple and beautiful ^w^"
+  }
+}

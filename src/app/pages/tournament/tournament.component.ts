@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BehaviorSubjectsService} from '../../widgets/behavior-subjects/behavior-subjects.service';
+import {BehaviorSubjectsService} from '../../widgets/services/behavior-subjects/behavior-subjects.service';
 
 @Component({
   selector: 'app-tournament',
